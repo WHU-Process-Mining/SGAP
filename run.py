@@ -29,7 +29,7 @@ if __name__ == "__main__":
         record_file.close()
         
         study = optuna.create_study(direction="maximize", sampler=TPESampler(seed=cfg_model_train['seed'])) # fixed parameter
-        study.optimize(lambda trial: SGAP_objective(trial, idx), n_trials=2, gc_after_trial=True, callbacks=[lambda study, trial:gc.collect()])
+        study.optimize(lambda trial: SGAP_objective(trial, idx), n_trials=20, gc_after_trial=True, callbacks=[lambda study, trial:gc.collect()])
         
         # record optimization history
         history = optuna.visualization.plot_optimization_history(study)

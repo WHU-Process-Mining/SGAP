@@ -9,7 +9,7 @@ k_fold_num: 3
 model_parameters:
   model_name: 'SGAP'
   batch_size: 64
-  num_epochs: 2 
+  num_epochs: 200 
   encoder_type: lstm # transformer
   layer_num: 2
   hidden_size: 8 
