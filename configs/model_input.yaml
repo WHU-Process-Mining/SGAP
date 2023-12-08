@@ -1,0 +1,12 @@
+dataset_path: 'data'
+dataset_names: [
+#     'helpdesk', 
+#     'BPI_challenge_2020_PermitLog',
+#     'BPI_challenge_2020_PrepaidTravelCost',
+#     'BPI_challenge_2020_InternationalDeclarations',
+#     'BPI_challenge_2020_DomesticDeclarations',
+    'Receipt',
+  ]
+
+k_fold_num: 3
+valid_ratio: 0.2
