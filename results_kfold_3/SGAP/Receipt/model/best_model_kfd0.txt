@@ -1,0 +1,3 @@
+Best trail:1
+Best hyperparameters:{'learning_rate': 0.0022673986523780395, 'layer_num': 4, 'feature_num': 128, 'hidden_size': 8, 'batch_size': 128, 'dropout': 0.31171107608941095, 'encoder_layer': 2}
+Best accuracy:0.4851380042462845

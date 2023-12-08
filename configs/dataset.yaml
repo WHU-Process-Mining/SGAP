@@ -1,0 +1,23 @@
+
+dataset_path: 'data'
+
+cols: 
+  default: ['case:concept:name', 'concept:name', 'time:timestamp']
+  new: ['case', 'activity', 'timestamp']
+  bpi20_p: ['org:resource', 'case:RequestedBudget', 'case:OrganizationalEntity', 'case:travel permit number']
+  receipt: ['org:resource', 'case:department', 'case:group', 'case:channel', 'case:enddate', 'case:responsible', 'org:group']
+  bpi20_ptco: ['org:resource', 'case:Rfp_id', 'org:role', 'case:Permit travel permit number', 'case:Task', 'case:RequestedAmount', 'case:Permit OrganizationalEntity', 'case:Permit RequestedBudget']
+  bpi20_id_cols: ['org:resource', 'case:Permit travel permit number', 'case:Amount', 'case:RequestedAmount', 'case:DeclarationNumber', 'case:Permit BudgetNumber', 'case:OriginalAmount']
+  bpi20_dd_cols: ['org:resource', 'org:role', 'case:DeclarationNumber', 'case:Amount', 'case:BudgetNumber']
+
+dataset_names: [
+    # 'helpdesk', 
+    # 'BPI_challenge_2020_PermitLog',
+    # 'BPI_challenge_2020_PrepaidTravelCost',
+    # 'BPI_challenge_2020_InternationalDeclarations',
+    # 'BPI_challenge_2020_DomesticDeclarations',
+    'Receipt'
+  ]
+
+k_fold_num: 3
+output_log: './preprocess.txt'
