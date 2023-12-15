@@ -1,4 +1,5 @@
 # SGAP
+SGAP: Enhancing Predictive Process Monitoring with Sequential Graphs and Trace Attention
 
 ## Setup
 
